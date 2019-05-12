@@ -1,0 +1,16 @@
+{
+  "City": [
+    {
+      "miasto": "Poznan",
+      "movies": "Pszczółka Maja, Shrek, 101 Dalmatyńczyków"
+    },
+    {
+      "miasto": "Warszawa",
+      "movies": "Fernando, Kopciuszek, Śnieżka"
+    },
+    {
+      "miasto": "Szczecin",
+      "movies": "Kopciuszek, 101 Dalmatyńczyków, Śnieżka"
+    }
+  ]
+}

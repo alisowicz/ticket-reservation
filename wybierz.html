@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+	<title>Seat Reservation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="jquery-1.4.1.min.js" type="text/javascript"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- validate email -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="wrapper_movies">
+
+		<!-- <div class="site_welcome"> -->
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">ticket:)</a>
+			<a href="index.html">Home</a>
+			<a href="repertuar.html">Repertuar</a>
+			<a href="logowanie.html">Logowanie</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars">menu</i>
+			</a>
+		</div>
+
+
+		<div class=" section-heading features-heading">
+			<div class="section-title features-title heading">Sprawdz co gramy w Twoim miescie</div>
+			<div id="features-subtitle" class="features-subtitle section-subtitle">zaznacz &amp; wyszukaj</div>
+		</div>
+
+		<form_filter>
+			<h2>Zaznacz miasto</h2>
+			<div id="choices"> </div>
+			<input type="button" value="Kliknij i Sprawdz!" onclick="callInfo();">
+			<br>
+		<p class="info">Miasto: <span id="miasto"></span></p>
+		<p class="info">Filmy: <span id="movies"></span></p>
+			
+		</form_filter>
+
+		
+		<div class="parallax">
+		
+		</div>
+		
+
+
+		<div class=" section-heading features-heading">
+			<div class="section-title features-title heading">Kup bilet online</div>
+			<div id="features-subtitle" class="features-subtitle section-subtitle">Wybierz swoje kino</div>
+		</div>
+
+
+	<form_filter_buy>	
+		
+		<select name="" id="wybor">
+			<option value="" selected disabled hidden>Wybierz jedną z opcji</option>
+			<option value="poznan">Poznań</option>
+			<option value="warszawa">Warszawa</option>
+			<option value="szczecin">Szczecin</option>
+
+		</select>
+
+		<div id="kino_poznan" class="ukryj">Repertuar Poznania
+
+			<a href"">
+				<option value="">
+						<div class="column  col3">
+							<a href="poznan.html";>
+								<div class="feature">
+									<div class="feature-image primary-color">
+										<div class="feature-icon-product"><img src="images/maja.jpg" style="background-image: url(images/maja.jpg);"></div>
+									</div>
+
+									<div class="feature-content">
+										<p>Kup bilet</p>
+									</div>
+												
+								</div>
+							</a>
+						</div>
+				</option>
+			</a>
+			
+			<a href"">
+				<option value="">
+						<div class="column  col3">
+							<a href="poznan.html";>
+								<div class="feature">
+									<div class="feature-image primary-color">
+										<div class="feature-icon-product"><img src="images/shrek.jpg" style="background-image: url(images/shrek.jpg);"></div>
+									</div>
+
+									<div class="feature-content">
+										<p>Kup bilet</p>
+									</div>
+												
+								</div>
+							</a>
+						</div>
+				</option>
+			</a>
+			
+			
+			<a href"">
+				<option value="">
+						<div class="column  col3">
+							<a href="poznan.html";>
+								<div class="feature">
+									<div class="feature-image primary-color">
+										<div class="feature-icon-product"><img src="images/101.jpg" style="background-image: url(images/101.jpg);"></div>
+									</div>
+
+									<div class="feature-content">
+										<p>Kup bilet</p>
+									</div>
+												
+								</div>
+							</a>
+						</div>
+				</option>
+			</a>
+
+		</div>
+		<div id="kino_warszawa" class="ukryj">Repertuar Warszawy
+			<a href"">
+				<option value="">
+						<div class="column  col3">
+							<a href="warszawa.html";>
+								<div class="feature">
+									<div class="feature-image primary-color">
+										<div class="feature-icon-product"><img src="images/fernando.jpg" style="background-image: url(images/fernando.jpg);"></div>
+									</div>
+
+									<div class="feature-content">
+										<p>Kup bilet</p>
+									</div>
+												
+								</div>
+							</a>
+						</div>
+				</option>
+			</a>
+			
+			<a href"">
+				<option value="">
+						<div class="column  col3">
+							<a href="warszawa.html";>
+								<div class="feature">
+									<div class="feature-image primary-color">
+										<div class="feature-icon-product"><img src="images/cindarella.jpg" style="background-image: url(images/cindarella.jpg);"></div>
+									</div>
+
+									<div class="feature-content">
+										<p>Kup bilet</p>
+									</div>
+												
+								</div>
+							</a>
+						</div>
+				</option>
+			</a>
+			
+			
+			<a href"">
+				<option value="">
+						<div class="column  col3">
+							<a href="warszawa.html";>
+								<div class="feature">
+									<div class="feature-image primary-color">
+										<div class="feature-icon-product"><img src="images/snow.jpg" style="background-image: url(images/snow.jpg);"></div>
+									</div>
+
+									<div class="feature-content">
+										<p>Kup bilet</p>
+									</div>
+												
+								</div>
+							</a>
+						</div>
+				</option>
+			</a>
+		</div>
+
+		<div id="kino_szczecin" class="ukryj">Repertuar Szczecina
+			<a href="szczecin.html">
+				<option value="">film siedem</option>
+			</a>
+			<a href="szczecin.html">
+				<option value="">film osiem</option>
+			</a>
+			<a href="szczecin.html">
+				<option value="">film dziewiec</option>
+			</a>
+		</div>	
+			
+		</form_filter>
+
+	</div>
+
+
+
+
+	<script type="text/javascript" src="script_wybor_kina.js"></script>
+	<script type="text/javascript" src="data.json"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

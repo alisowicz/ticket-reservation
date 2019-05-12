@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+	<title>Seat Reservation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="jquery-1.4.1.min.js" type="text/javascript"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- validate email -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<div class="wrapper_movies">
+
+		<!-- <div class="site_welcome"> -->
+		<div class="topnav" id="myTopnav">
+			<a href="#home" class="active">ticket:)</a>
+			<a href="index.html">Home</a>
+			<a href="repertuar.html">Repertuar</a>
+			<a href="logowanie.html">Logowanie</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars">menu</i>
+			</a>
+		</div>
+		
+
+		<div id="features-product" class="section features">
+		<div class="container">
+			<div class=" section-heading features-heading">
+				<div class="section-title features-title heading">Repertuar</div>
+			</div>
+
+			<div class="row">
+				<div class="column  col3">
+					<a href="https://www.filmweb.pl/film/Pszcz%C3%B3%C5%82ka+Maja.+Film-2014-709830"; target="_blank">
+						<div class="feature">
+							<div class="feature-image primary-color">
+								<div class="feature-icon-product"><img src="images/maja.jpg" style="background-image: url(images/maja.jpg);"></div>
+							</div>
+
+							<div class="feature-content">
+								<p>Kliknij i zobacz </p>
+								<p class="describe_movie">Maja jest malutką, ciekawską i bardzo sympatyczną pszczółką. Urodzona i wychowana w perfekcyjnie zorganizowanym ulu, marzy o wolnośozpoczyna fantastyczną podróż po przepięknej kwiecistej łące. Towarzyszyć jej będe obieżyświat – konik polny Filip, nieśpieszny ślimak Muszlak i całe mnóstwo innych kumpli na dobre i na złe.  </p>
+							</div>
+												
+						</div>
+					</a>
+				</div>
+				<div class="column  col3">
+					<a href="https://www.filmweb.pl/2.Shrek"; target="_blank">	
+						<div class="feature">
+							<div class="feature-image primary-color">
+								<div class="feature-icon-product"><img src="images/shrek.jpg" style="background-image: url(images/shrek.jpg);"></div>
+							</div>
+
+							<div class="feature-content">
+								<p>Kliknij i zobacz </p>
+								<p class="describe_movie">"Shrek", jeden z najbardziej oczekiwanych filmów tego roku, który właśnie wszedł na nasze ekrany, jest na dzień dzisiejszy najbardziej prawdopodobnym kandydatem do zajęcia pierwszego miejsca na mojej prywatnej liście najlepsz2001. Pod względem fabuły, realizacji oraz humoru nie ma bowiem sy wciąż słyszą: "nie możesz", "nie przystoi".  </p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column  col3">
+					<a href="https://www.filmweb.pl/film/Kopciuszek-1950-96094"; target="_blank">	
+						<div class="feature">
+							<div class="feature-image primary-color">
+								<div class="feature-icon-product"><img src="images/cindarella.jpg" style="background-image: url(images/cindarella.jpg);"></div>
+							</div>
+
+							<div class="feature-content">
+								<p>Kliknij i zobacz </p>
+								<p class="describe_movie">Kopciuszek to przezwisko pięknej, pracowitej i dobrej dziewczynki, nadane jej przez złą macochę i samolubne przyrodnie siostry. Zazdrosne o jej urodę każą wykonywać Kopciuszkowi najcięższe, najbardziej brudne prace, aby pod warstwą brudu i sadzy ukryć jej powab i wdzięk. Mimo to Kopciuszek potrafi zachowa swojej matki chrzestnej - dobrej wróżki i jej magii, Kopciuszek bierze udział   </p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column  col3">
+					<a href="https://www.filmweb.pl/film/Kr%C3%B3lewna+%C5%9Anie%C5%BCka+i+siedmiu+krasnoludk%C3%B3w-1937-30591"; target="_blank">	
+						<div class="feature">
+							<div class="feature-image primary-color">
+								<div class="feature-icon-product"><img src="images/snow.jpg" style="background-image: url(images/snow.jpg);"></div>
+							</div>
+
+							<div class="feature-content">
+								<p>Kliknij i zobacz </p>
+								<p class="describe_movie">"Lustereczko powiedz przecie, kto jest najpiękniejszy w świecie?" "Hej ho, hej ho, do pracy by się szło…" Któż nie zna tych słów? Chyba nie ma takiej osoby, która nie pamiętałaby z lat dziecinnych historii o pięknej, dobrej księżniczce, jej bardzo dolem tych wszystkich, którzy wciąż słyszą: "nie możesz", "nie przystoi".  </p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="column  col3">
+					<a href="https://www.filmweb.pl/film/101+Dalmaty%C5%84czyk%C3%B3w-1961-106214"; target="_blank">	
+							<div class="feature">
+								<div class="feature-image primary-color">
+									<div class="feature-icon-product"><img src="images/101.jpg" style="background-image: url(images/101.jpg);"></div>
+								</div>
+
+								<div class="feature-content">
+									<p>Kliknij i zobacz </p>
+									<p class="describe_movie">Komedia będąca aktorską wersją głośnego filmu animowanego. Akcja rozgrywa się w Londynie. Jednym z bohaterów jest Roger - samotnik zajmujący się projektowaniem gier komputerowych. Jego jedynym towarzyszem jest uroczy dalmatyńczyk Pongo. Sytuacja ulega zmianie, gdy dzięki Pongo Roger spotyka piękną Anitę - właścicielkę dalmatynki Perdity.   </p>
+								</div>
+							</div>
+					</a>
+				</div>
+				<div class="column  col3">
+					<a href="https://www.filmweb.pl/film/Fernando-2017-718863"; target="_blank">	
+
+							<div class="feature">
+								<div class="feature-image primary-color">
+									<div class="feature-icon-product"><img src="images/fernando.jpg" style="background-image: url(images/fernando.jpg);"></div>
+								</div>
+
+								<div class="feature-content">
+									<p>Kliknij i zobacz </p>
+									<p class="describe_movie">Animowany "Fernando" to odważny głos w globalnym konflikcie, w którym chodzi o niezbywalne prawo do bycia sobą niezależnie od przypisanych ról płciowych czy społecznych. Tytułowy bohater został przez twórców tak zaprezentowany, by stać się idolem tych wszystkich, którzy wciąż słyszą: "nie możesz", "nie przystoi".  </p>
+								</div>
+							</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+						
+						
+	</div>
+
+
+	
+
+	<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>
