@@ -412,7 +412,8 @@ input[type='radio']:not(old) + label {
     margin: 0 auto; } }
 div span {
   background: transparent;
-  margin-right: 10px; }
+  margin-right: 10px;
+  cursor: pointer; }
 
 .ukryj {
   display: none; }
