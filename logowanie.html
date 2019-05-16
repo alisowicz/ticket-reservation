@@ -18,18 +18,19 @@
 	<div class="wrapper">
 
 		<!-- <div class="site_welcome"> -->
-		<div class="topnav" id="myTopnav">
-			<a href="index.html" class="active">ticket:)</a>
-			<a href="index.html">Home</a>
-			<a href="repertuar.html">Repertuar</a>
-			<a href="logowanie.html">Logowanie</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars">menu</i>
-			</a>
-		</div>
-		
+		<header class="header">
+				  <a href="index.html" class="logo">TiCkEt :)</a>
+				  <input class="menu-btn" type="checkbox" id="menu-btn" />
+				  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+					  <ul class="menu">
+					    <li><a href="index.html">Home</a></li>
+					    <li><a href="repertuar.html">Repertuar</a></li>
+					    <li><a href="logowanie.html">Logowanie</a></li>
+					  </ul>
+		</header>
 
-		<form name="form1" style="max-width: 500px;margin: 0 auto;">
+
+		<form name="form1" style="display: flex;justify-content:center;flex-direction: column;height: 550px;">
 					<table border="1" style="max-width: 500px;margin: 50px auto 0;">
 						<TR>
 							<td bordercolor="#FFFFFF" style="color: white;">Uzytkownik: (User1)</td>
@@ -49,7 +50,7 @@
 							</TD>
 						</TR>
 					</TABLE>
-			</form>									
+			</form>
 	</div>
 
 	<script type="text/javascript" src="script.js"></script>

@@ -25,7 +25,7 @@ function callInfo() {
   var citys = document.getElementsByName('City');
   var select;
 
-  for(var i=0; i<citys.length; i++) 
+  for(var i=0; i<citys.length; i++)
     if(citys[i].checked){
       select = citys[i].value;
       break;
@@ -37,7 +37,7 @@ function callInfo() {
       break;
     }
   }
-      
+
   var miasto = mydb.City[select].miasto;
   var movies = mydb.City[select].movies;
 
@@ -53,20 +53,20 @@ function setOptions() {
   base.type = 'radio';
   base.name = 'City';
   div.className = 'radio-choice';
-  
+
   console.log(mydb.City.length);
-  
+
   for(var i=0; i<mydb.City.length; i++) {
     var miastoAtual = mydb.City[i].miasto;
-    
+
     base.value = miastoAtual;
     base.id = miastoAtual;
     label.htmlFor = miastoAtual;
     label.innerHTML = '<span><span></span></span>' +miastoAtual;
-    
+
     div.appendChild(base);
     div.appendChild(label);
-    
+
     container.appendChild(div.cloneNode(true));
   }
 
@@ -78,7 +78,7 @@ window.onload = function() {
       mydb = JSON.parse(response);
       setOptions();
   }), 1000);
-  
+
 }
 
 
@@ -87,12 +87,12 @@ window.onload = function() {
 document.getElementById("wybor").addEventListener("change",function(){
   var selObj = document.getElementById("wybor");
   var selValue = selObj.options[selObj.selectedIndex].value;
-  
+
   if (selValue == "poznan"){
   document.getElementById("kino_poznan").classList.remove("ukryj");
   document.getElementById("kino_szczecin").classList.add("ukryj");
   document.getElementById("kino_warszawa").classList.add("ukryj")}
-	
+
   if (selValue == "szczecin"){
   document.getElementById("kino_poznan").classList.add("ukryj");
   document.getElementById("kino_warszawa").classList.add("ukryj");
@@ -103,4 +103,3 @@ document.getElementById("wybor").addEventListener("change",function(){
    document.getElementById("kino_poznan").classList.add("ukryj");
    document.getElementById("kino_szczecin").classList.add("ukryj")}
 })
-
