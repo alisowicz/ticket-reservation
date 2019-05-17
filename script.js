@@ -16,7 +16,7 @@ function check()
   var user = document.form1.user.value;
   var pass = document.form1.pass.value;
   if(!sprawdz_haslo(user, pass)){
-      alert('Niepoprawne hasło!');
+      alert('Niepoprawny login lub haslo!');
   }
   else{
     document.location.href = "wybierz.html";

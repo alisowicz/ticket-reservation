@@ -15,42 +15,43 @@
 
 <body>
 
+	<header class="header">
+		<a href="index.html" class="logo"><img src="images/ticket.jpg" alt="logo" style="width: 90px;"></a>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<ul class="menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="repertuar.html">Repertuar</a></li>
+			<li><a href="logowanie.html">Logowanie</a></li>
+		</ul>
+	</header>
+
 	<div class="wrapper">
 
 		<!-- <div class="site_welcome"> -->
-		<header class="header">
-				  <a href="index.html" class="logo">TiCkEt :)</a>
-				  <input class="menu-btn" type="checkbox" id="menu-btn" />
-				  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-					  <ul class="menu">
-					    <li><a href="index.html">Home</a></li>
-					    <li><a href="repertuar.html">Repertuar</a></li>
-					    <li><a href="logowanie.html">Logowanie</a></li>
-					  </ul>
-		</header>
 
 
 		<form name="form1" style="display: flex;justify-content:center;flex-direction: column;height: 550px;">
-					<table border="1" style="max-width: 500px;margin: 50px auto 0;">
-						<TR>
-							<td bordercolor="#FFFFFF" style="color: white;">Uzytkownik: (User1)</td>
-							<TD bordercolor="#FFFFFF">
-								<INPUT TYPE="text" NAME="user">
-							</TD>
-						</TR>
-						<TR>
-							<td bordercolor="#FFFFFF" style=" color: white;">Haslo:(Kod1)</td>
-							<TD bordercolor="#FFFFFF">
-								<INPUT TYPE="password" NAME="pass">
-							</TD>
-						</TR>
-						<TR>
-							<TD colspan="2" align="center" bordercolor="#FFFFFF">
-								<input type="button" value="Zaloguj" onclick="check();" style="padding: 13px 127px;margin-top: 20px;">
-							</TD>
-						</TR>
-					</TABLE>
-			</form>
+			<table border="1" style="max-width: 500px;margin: 50px auto 0;">
+				<TR>
+					<td bordercolor="#FFFFFF" style="color: white;">Uzytkownik: (User1)</td>
+					<TD bordercolor="#FFFFFF">
+						<INPUT TYPE="text" NAME="user">
+					</TD>
+				</TR>
+				<TR>
+					<td bordercolor="#FFFFFF" style=" color: white;">Haslo:(Kod1)</td>
+					<TD bordercolor="#FFFFFF">
+						<INPUT TYPE="password" NAME="pass">
+					</TD>
+				</TR>
+				<TR>
+					<TD colspan="2" align="center" bordercolor="#FFFFFF">
+						<input type="button" value="Zaloguj" onclick="check();" style="padding: 13px 127px;margin-top: 20px;">
+					</TD>
+				</TR>
+			</TABLE>
+		</form>
 	</div>
 
 	<script type="text/javascript" src="script.js"></script>

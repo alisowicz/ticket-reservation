@@ -1,5 +1,4 @@
 
-alert('tak sprawdzam czy działa js :)')
 
 //wybor kina radio
 
@@ -8,7 +7,9 @@ var mydb;
 
 function loadJSON(callback) {
   var xobj = new XMLHttpRequest();
-  xobj.open('GET', 'https://api.myjson.com/bins/1c49y2', true);
+//  xobj.open('GET', 'https://api.myjson.com/bins/1c49y2', true);
+	xobj.open('GET', 'data.json', true);
+
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
