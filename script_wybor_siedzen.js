@@ -33,7 +33,10 @@ for (let j = 0 + 1; j < 10; j++) {
 	let para_parent = document.createElement("div2");
 	for (let i = 0 + 1; i < 10; i++) {
 		let para = document.createElement("span");
-		let node = document.createTextNode("aleja " + j + " m. " + i + " ");
+		let node = document.createElement('img');
+		node.width = 40;
+		node.height = 40;
+		node.src = "images/zielone.png"
 		para.appendChild(node);
 		para_parent.appendChild(para);
 	}
@@ -45,12 +48,12 @@ var sum = 0;
 var elements = document.querySelectorAll('div2 span');
 elements.forEach(function (element) {
 	element.addEventListener('click', function () {
-		if (element.style.background == 'green') {
+		if (element.style.background == 'red') {
 			element.style.background = 'none';
 			sum = sum - 8;
 			document.getElementById("cena").innerHTML = sum
 		} else {
-			element.style.background = 'green';
+			element.style.background = 'red';
 			sum = sum + 8;
 			document.getElementById("cena").innerHTML = sum + "zł" + "<br/>" + "<br/>" + "Wybrałeś miejsca? Zapraszamy poniżej do podsumowania zamówienia :)";
 		}
